@@ -2,6 +2,7 @@ import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
+import { EmpAppComponent } from '../TodoApp/emp-app/emp-app.component';
 
 export interface TodoItem {
   id: number;
@@ -12,7 +13,7 @@ export interface TodoItem {
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, FormsModule, NgFor],
+  imports: [RouterOutlet, FormsModule, NgFor, EmpAppComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
